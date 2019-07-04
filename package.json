@@ -1,7 +1,7 @@
 {
   "name": "gulp-starter-kit",
   "version": "1.2.0",
-  "description": "",
+  "description": "![banner.png](https://i.ibb.co/2tX2gRk/banner.png)",
   "main": "index.js",
   "scripts": {
     "prepare": "gulp prepare",
@@ -42,5 +42,6 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "stylelint": "^9.10.1"
-  }
+  },
+  "dependencies": {}
 }
