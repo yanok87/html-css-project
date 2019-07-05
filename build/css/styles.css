@@ -401,12 +401,6 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .first-line {
   display: flex;
   justify-content: space-between;
@@ -561,4 +555,54 @@ img {
 .review-author {
   font-family: "Lato", sans-serif;
   font-size: 14px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.images {
+  display: flex;
+  flex-basis: 570px;
+  justify-content: space-between;
+}
+
+.imagesimg {
+  width: 270px;
+  height: auto;
+  display: block;
+}
+
+.booking {
+  flex-basis: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-title {
+  font-family: "Yeseva One";
+  font-size: 36px;
+  color: #cc9900;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.booking-title::after {
+  content: '';
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10%);
+  transform: translate(-50%, 10%);
+  display: block;
+  width: 247px;
+  height: 30px;
+  background: url("../images/divider-g@1X.png") center no-repeat;
+  background-size: contain;
 }
