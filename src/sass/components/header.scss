@@ -1,0 +1,104 @@
+header {
+    background: url(../images/Bg.jpg) no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+.logo {
+    padding-top: 14px;
+    &__img {
+        width: 155px;
+        height: 92px;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+.navigation {
+    padding-top: 46px;
+    margin-bottom: 150px;
+    
+    &__list {
+        display: flex;
+        font-family: $secondary-font;
+        font-weight: bold;
+        font-size: 21px;
+        }
+    &__link {
+        color: white;
+        tab-size: 21px;
+        transition: all .2s;
+        &:hover {
+        color: $main-theme-color;     
+            }
+        }
+        &__item {
+            transition: all 0.3s;
+        }
+    &__item:not(:nth-last-of-type(-n+4)) {
+        margin-right: 50px;
+    }
+    &__item:nth-last-of-type(-n+4)  {
+        margin-right: 16px;
+    }
+    &__item:hover {
+        transform: scale(1.2);
+    }
+    }  
+
+
+.top-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.top-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    
+}
+.main-title {
+    position: relative;
+    font-size: 90px;
+    color: white;
+    width: 950px;
+    text-align: center;
+    &::after {
+        content: '';
+        background: url(../images/Divider-w@1X.png) no-repeat center;
+        display:block;
+        margin: 0 auto;
+        width: 236px;
+        height: 105px;
+    }
+}
+
+   
+.site-navigation__icon {
+    width: 20px;
+    height: 20px;
+    fill: $main-theme-color;
+    transition: all .3s;
+    &:hover {
+        fill: white;
+    }
+}
+.button {
+    color: white;
+    @extend %button;
+    &__header {
+        background-color: rgba(228, 228, 228, 0.2);
+        background-clip: border-box;
+    }
+    &__header:hover {
+        background-color: rgba(20, 20, 20, 0.7);
+        background-clip: border-box;
+    }
+    &__list {
+        display: flex;
+    }
+    &__header:first-of-type {
+        margin-right: 30px;
+    }
+}
