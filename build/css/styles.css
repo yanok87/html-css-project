@@ -398,14 +398,14 @@ h1 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
   list-style: none;
+  text-decoration: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .button {
@@ -422,6 +422,11 @@ img {
   cursor: pointer;
 }
 
+.menu {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 header {
   background: url(../images/Bg.jpg) no-repeat;
   background-size: cover;
@@ -435,7 +440,6 @@ header {
 .logo__img {
   width: 155px;
   height: 92px;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -450,7 +454,6 @@ header {
 }
 
 .navigation__list {
-  display: -webkit-box;
   display: flex;
   font-family: "Gentium Book Basic", serif;
   font-weight: bold;
@@ -462,7 +465,6 @@ header {
   -moz-tab-size: 21px;
   -o-tab-size: 21px;
   tab-size: 21px;
-  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -471,7 +473,6 @@ header {
 }
 
 .navigation__item {
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -489,18 +490,13 @@ header {
 }
 
 .top-container {
-  display: -webkit-box;
   display: flex;
   justify-content: space-around;
 }
 
 .top-wrapper {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-flow: column wrap;
-  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -525,7 +521,6 @@ header {
   width: 20px;
   height: 20px;
   fill: #cc9900;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -548,7 +543,6 @@ header {
 }
 
 .button__list {
-  display: -webkit-box;
   display: flex;
 }
 
@@ -560,18 +554,14 @@ header {
   height: 710px;
   background: url(../images/pattern.png) no-repeat;
   background-size: cover;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   justify-content: space-around;
 }
 
 .right-food__section {
-  display: -webkit-box;
   display: flex;
   flex-basis: 1050px;
-  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -583,12 +573,8 @@ header {
 }
 
 .chief {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-flow: column wrap;
-  -webkit-box-align: center;
   align-items: center;
   text-align: center;
   width: 430px;
@@ -621,15 +607,10 @@ header {
 }
 
 .ingredients__section {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-flow: column wrap;
   text-align: center;
   align-self: center;
@@ -641,20 +622,16 @@ header {
 }
 
 .ingredients__wrapper {
-  display: -webkit-box;
   display: flex;
   background: url(../images/bg-2.jpg) no-repeat;
   background-size: cover;
   height: 758px;
-  -webkit-box-pack: end;
   justify-content: flex-end;
   align-content: center;
 }
 
 .ingredients__wrapper--images {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
 }
 
@@ -683,7 +660,6 @@ header {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -694,4 +670,199 @@ header {
 .ingredients__images:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+}
+
+.menu {
+  height: 800px;
+  padding: 0 110px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.menu-part {
+  width: 464px;
+  justify-content: space-around;
+}
+
+.menu-part:not(:nth-child(even)) {
+  margin-bottom: 40px;
+}
+
+.menu-part__title {
+  font-family: "Yeseva One";
+  color: #cc9900;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.menu-part__title::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
+  display: block;
+  width: 247px;
+  height: 24px;
+  background: url("../images/divider-g@1X.png") center no-repeat;
+  background-size: contain;
+}
+
+.meal {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.meal-list {
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.first-line {
+  width: 434px;
+  padding: 12px 0;
+  border-bottom: 1px #cc9900 solid;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  color: #cc9900;
+}
+
+.meal-descr {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #4c4c4c;
+  padding: 12px 0;
+}
+
+.special {
+  border: 1px #cc9900 solid;
+  position: relative;
+}
+
+.special::after {
+  content: 'Special';
+  position: absolute;
+  top: 0px;
+  right: 0;
+  -webkit-transform: translate(1px, -100%);
+  transform: translate(1px, -100%);
+  background-color: #cc9900;
+  padding: 5px 10px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.review {
+  background: url("../images/bg-3.jpg") center no-repeat;
+  background-size: cover;
+  height: 760px;
+  display: flex;
+  align-items: center;
+}
+
+.review-box {
+  max-width: 770px;
+  height: auto;
+  margin: 0 auto;
+  padding: 80px 70px 100px;
+  background-color: rgba(7, 7, 7, 0.7);
+  color: #fff;
+  text-align: center;
+}
+
+.review-title {
+  font-family: "Yeseva One";
+  font-size: 36px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.review-title::after {
+  content: '';
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10%);
+  transform: translate(-50%, 10%);
+  display: block;
+  width: 247px;
+  height: 30px;
+  background: url("../images/divider-w@1X.png") center no-repeat;
+  background-size: contain;
+}
+
+.review-text {
+  font-family: "Gentium Book Basic", serif;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.review-author {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.images {
+  display: flex;
+  flex-basis: 570px;
+  justify-content: space-between;
+}
+
+.imagesimg {
+  width: 270px;
+  height: auto;
+  display: block;
+}
+
+.booking {
+  flex-basis: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-title {
+  font-family: "Yeseva One";
+  font-size: 36px;
+  color: #cc9900;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.booking-title::after {
+  content: '';
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10%);
+  transform: translate(-50%, 10%);
+  display: block;
+  width: 247px;
+  height: 30px;
+  background: url("../images/divider-g@1X.png") center no-repeat;
+  background-size: contain;
 }
