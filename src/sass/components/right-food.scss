@@ -1,0 +1,54 @@
+.right-food {
+    height: 710px;
+    background: url(../images/pattern.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+     
+    &__section {
+        
+        display: flex;
+        flex-basis: 1050px;
+        justify-content: space-between;
+        
+    }
+    &__main-img {
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        box-shadow: 1px 28px 43px 3px rgba(0,0,0,0.23); 
+    }
+}
+.chief {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    width: 430px;
+    height: 510px;
+    &__img {
+        height: 220px;
+        width: 220px;
+    }
+    &__title {
+        color: $main-theme-color;
+        font-size: 36px;
+        
+        &::after {
+        content: '';
+        background: url(../images/Divider-g@1X.png) no-repeat center;
+        display:block;
+        margin: 0 auto;
+        width: 236px;
+        height: 66px;
+        }   
+    }
+    &__paragraph {
+        margin-bottom: 50px;
+        font-family: $text-font;
+        font-size: 16px;
+    }
+
+} 
+
