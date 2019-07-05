@@ -3,10 +3,12 @@
 */
 @import 'normalize';
 @import 'base';
-
 @import 'helpers/variables';
 @import 'helpers/placeholders';
+@import 'components/header';
+@import 'components/right-food';
+@import 'components/ingredients';
 
-@import 'components/';
+
 
 

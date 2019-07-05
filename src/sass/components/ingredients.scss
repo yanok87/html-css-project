@@ -1,0 +1,67 @@
+
+.ingredients {
+    &__section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-flow: column wrap;
+        text-align: center;
+        align-self: center;
+        color: white;
+        height: 570px;
+        width: 560px;
+        background:radial-gradient(ellipse at center, rgba(200,200,200,0.15) 18%, rgba(26,23,23,0.15) 25%, rgba(21,19,19,0.15) 38%, rgba(1,0,0,0.95) 97%, rgba(0,0,0,0.95) 100%);
+        margin-right: 215px;
+        }
+    &__wrapper {
+        display: flex;
+        background: url(../images/bg-2.jpg) no-repeat;
+        background-size: cover;
+        height: 758px;
+        justify-content: flex-end;
+        align-content: center;
+            &--images {
+                display: flex;
+                justify-content: center;
+                
+        }
+    }
+    &__title{
+        font-size: 36px;
+        font-family: $text-font;
+        &::after {
+            content: '';
+            background: url(../images/Divider-w@1X.png) no-repeat center;
+            display:block;
+            margin: 0 auto;
+            width: 236px;
+            height: 66px; 
+        }
+    }
+    
+    &__paragraph {
+        width: 430px;
+        font-size: 16px;
+        font-family: $text-font;
+        margin-bottom: 70px;
+       } 
+    &__images {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        &:not(:last-of-type) {
+            margin-right: 50px;
+        }
+        &:hover {
+            transform: scale(1.3)
+        }
+    }
+}
+      
+
+
+
+
+
