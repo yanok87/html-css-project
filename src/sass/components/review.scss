@@ -1,0 +1,55 @@
+.review {
+    background: url('../images/bg-3.jpg') center no-repeat;
+    background-size: cover;
+    height: 760px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.review-box {
+    max-width: 770px;
+    height: auto;
+    margin: 0 auto;
+    padding: 80px 70px 100px;
+    background-color: rgba(7, 7, 7, 0.7);
+    color: #fff;
+    text-align: center;
+}
+
+.review-title {
+    font-family: $title-font;
+    font-size: 36px;
+    margin-bottom: 70px;
+    position: relative;
+
+
+    &::after {
+        content:'';
+        position: absolute;
+        bottom: -100%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        display: block;
+        width: 247px;
+        height: 30px;
+        background: url('../images/divider-w@1X.png') center no-repeat;
+        background-size: contain;
+
+    }
+}
+
+.review-text {
+    font-family: $secondary-font;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.review-author {
+    font-family: $text-font;
+    font-size: 14px;
+}
+
+
+  

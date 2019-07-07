@@ -14,19 +14,19 @@
         overflow:hidden;
     }
 
-    *,
+*,
 *::before,
 *::after, 
     h1  {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   text-decoration: none;
    list-style: none;
+   text-decoration: none;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+// img {
+//     max-width: 100%;
+//     height: auto;
+//     display: block;
+// }

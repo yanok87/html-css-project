@@ -1,0 +1,99 @@
+
+.menu {
+    @extend %container;
+    height: 800px;
+    padding: 0 110px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu-part {
+    width: 464px;
+    justify-content: space-around;
+    &:not(:nth-child(even)) {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: $title-font;
+        color: $main-theme-color;
+        font-size: 36px;
+        line-height: 1;
+        margin: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        position: relative;
+        text-align: center;
+        margin-bottom: 60px;
+
+        &::after {
+            content:'';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            display: block;
+            width: 247px;
+            height: 24px;
+            background: url('../images/divider-g@1X.png') center no-repeat;
+            background-size: contain;
+
+        }
+    }
+}
+
+.meal {
+    // margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.meal-list {
+    // @extend %list;
+    height: auto;
+    flex-wrap: wrap;
+    // flex-basis: 434px;
+}
+
+.first-line {
+    @extend %list;
+    width: 434px;
+    padding: 12px 0;
+    // margin-bottom: 12px;
+    border-bottom: 1px $main-theme-color solid;
+    font-size: 20px;
+    font-family: $title-font;
+    // font-weight: bold;
+    color: $main-theme-color;
+}
+
+.meal-descr {
+    font-family: $text-font;
+    font-size: 14px;
+    color: $main-text-color;
+    padding: 12px 0;
+}
+
+.special {
+    border: 1px $main-theme-color solid;
+    position: relative;
+
+    &::after {
+        content:'Special';
+        position: absolute;
+        top: 0px;
+        right: 0;
+        transform: translate(1px, -100%);
+        background-color: $main-theme-color;
+        padding: 5px 10px;
+        color: #fff;
+        font-family: $text-font;
+        font-size: 12px;
+        line-height: 1;
+
+    }
+}
