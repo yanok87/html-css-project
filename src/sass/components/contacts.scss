@@ -125,6 +125,13 @@ select {
 
 select {
     appearance: none;
+    background: url(../images/icon-arrow.svg) no-repeat 95% center  rgba(255, 255, 255, 0.399);
+    background-size: 12px; 
+}
+
+input[name="date"] {
+    background: url(../images/icon-calendar.svg) no-repeat 95% center  rgba(255, 255, 255, 0.399);
+    background-size: 16px; 
 }
 
 

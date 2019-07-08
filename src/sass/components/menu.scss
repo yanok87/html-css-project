@@ -47,28 +47,24 @@
 }
 
 .meal {
-    // margin-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
+    width: 434px;
 }
 
 
 .meal-list {
-    // @extend %list;
     height: auto;
     flex-wrap: wrap;
-    // flex-basis: 434px;
 }
 
 .first-line {
     @extend %list;
-    width: 434px;
+    width: 414px;
     padding: 12px 0;
-    // margin-bottom: 12px;
     border-bottom: 1px $main-theme-color solid;
     font-size: 20px;
     font-family: $title-font;
-    // font-weight: bold;
     color: $main-theme-color;
 }
 
@@ -96,5 +92,111 @@
         font-size: 12px;
         line-height: 1;
 
+    }
+}
+
+@media (max-width: 1199px) {
+    .menu {
+        height: 920px;
+        padding: 70px;
+        align-content: space-between;
+    }
+    .menu-part,
+    .meal {
+        width: 380px;
+    }
+
+    .first-line {
+        width: 360px;
+    }
+
+    .special::after {
+        padding: 3px 7px;
+        font-size: 10px;
+        transform: translate(1px, -50%);
+    }
+}
+
+@media (max-width: 991px) {
+    .menu {
+        height: 900px;
+        padding: 50px;
+    }
+    .menu-part,
+    .meal {
+        width: 300px;
+    }
+
+    .menu-part:not(:nth-child(even)) {
+            margin-bottom: 30px;
+        }
+    .menu-part__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+
+        &::after {
+                bottom: -10px;
+                width: 200px;
+                height: 20px;
+        }
+    }
+
+    .first-line {
+        width: 280px;
+    }
+}
+
+@media (max-width: 740px) {
+    .menu {
+        height: 760px;
+        padding: 40px 20px 0;
+    }
+    .menu-part,
+    .meal {
+        width: 270px;
+    }
+
+    .menu-part:not(:nth-child(even)) {
+            margin-bottom: 20px;
+        }
+    .menu-part__title {
+            font-size: 24px;
+            margin-bottom: 26px;
+
+        &::after {
+                bottom: -10px;
+                width: 180px;
+                height: 18px;
+        }
+    }
+
+    .first-line {
+        width: 250px;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .meal-descr {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-wrap: nowrap;
+        height: auto;
+        align-items: center;
+    }
+
+    .menu-part:nth-child(even) {
+        margin-bottom: 20px;
+    }
+
+    .menu-part:last-child {
+        margin-bottom: 40px;
+    }
+
+    .special::after {
+        transform: translate(1px, -100%);
     }
 }
