@@ -1,10 +1,10 @@
 
- @media  (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    header {
-      background:
-      url(../images/Bg@2x.jpg) no-repeat;
-      background-size: cover;
-    }}  
+//  @media  (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     header {
+//       background:
+//       url('../images/Bg@2X.jpg') no-repeat;
+//       background-size: cover;
+//     }}  
 header {
     background: url(../images/Bg.jpg) no-repeat;
     background-size: cover;
@@ -74,7 +74,7 @@ header {
     text-align: center;
     &::after {
         content: '';
-        background: url(../images/Divider-w@1X.png) no-repeat center;
+        background: url(../images/divider-w@1X.png) no-repeat center;
         display:block;
         margin: 0 auto;
         width: 236px;
