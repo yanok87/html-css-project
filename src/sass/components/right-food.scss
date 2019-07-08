@@ -1,4 +1,5 @@
 .right-food {
+    
     height: 710px;
     background: url(../images/pattern.png) no-repeat;
     background-size: cover;
@@ -52,23 +53,3 @@
     }
 
 } 
-@media (max-width:900px) {
-
-    .right-food__section {
-        display: flex;
-        
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        justify-content: space-around;
-        height: 500px;
-    }
-    .right-food__main-img {
-        width: 200px;
-        height: auto;
-        
-    }
-    .chief {
-        &__paragraph {
-            width: 330px;
-}}}
