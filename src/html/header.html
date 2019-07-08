@@ -1,6 +1,11 @@
 <header>
   <div class="top-container">
-    <a class="logo" href="#"><img class="logo__img" src="../images/Logo.png" alt=""></a>
+    <a class="logo" href="#"><img class="logo__img"
+      srcset="../images/Logo.png 380w, ../images/Logo@2x.png 760w"
+sizes="(max-width: 380px) 380px,
+        (max-width: 760px)  760px,
+         380px"
+       src="../images/Logo.png" alt=""></a>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
@@ -10,29 +15,35 @@
         <li class="navigation__item"><a class="navigation__link" href="#">Reviews</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Reservations</a></li>
         
-        <li class="navigation__item"><a class="navigation__link" href="#">
-        <svg  class="icon site-navigation__icon">
-          <use href="images/sprite.svg#icon-twitter">
-          </use></svg></a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">
+        <li class="navigation__item navigation__item--social"><a class="navigation__link" href="#">
+          <svg  class="icon site-navigation__icon">
+            <use href="images/sprite.svg#icon-twitter">
+            </use></svg></a></li>
+        <li class="navigation__item navigation__item--social"><a class="navigation__link" href="#">
             <svg  class="icon site-navigation__icon">
-              <use href="images/sprite.svg#icon-youtube">
-              </use></svg></a></li>
+            <use href="images/sprite.svg#icon-youtube">
+            </use></svg></a></li>
               
-          <li class="navigation__item"><a class="navigation__link" href="#">
-            <svg  class="icon site-navigation__icon">
-              <use href="images/sprite.svg#icon-facebook">
-              </use></svg></a></li>              
+        <li class="navigation__item navigation__item--social"><a class="navigation__link" href="#">
+          <svg  class="icon site-navigation__icon">
+            <use href="images/sprite.svg#icon-facebook">
+            </use></svg></a></li>              
       </ul>
     </div>
-    <section>
-    <div class="top-wrapper">
-      <h1 class="main-title">the right ingredients for the right food</h1>
-      <ul class="button__list">
-          <li><button class="button button__header">book a table</button></li>
-          <li><button class="button button__header">see the menu</button></li>
-      </ul>
-    </div>
-    </nav>
-    </section>
+  </nav>
+  <section>
+  <div class="top-wrapper">
+    <h1 class="main-title">the right ingredients for the right food</h1>
+    <ul class="button__list">
+        <li class="button__item"><button class="button button__header">book a table</button></li>
+        <li class="button__item"><button class="button button__header">see the menu</button></li>
+    </ul>
+  </div>
+  </section>
+  <div class="toggle-menu"><a href="#">
+    <svg class="icon site-navigation__menu--hiden">
+        <use href="images/sprite.svg#icon-menu">
+    </svg>
+    </a>
+  </div>
 </header>

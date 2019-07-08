@@ -574,8 +574,8 @@ header {
 }
 
 .navigation__item:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .top-container {
@@ -599,7 +599,7 @@ header {
 
 .main-title::after {
   content: '';
-  background: url(../images/Divider-w@1X.png) no-repeat center;
+  background: url(../images/divider-w@1X.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
@@ -635,8 +635,22 @@ header {
   display: flex;
 }
 
-.button__header:first-of-type {
+.button__item:nth-of-type(1) {
   margin-right: 30px;
+}
+
+.site-navigation__menu--hiden {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  fill: #cc9900;
+  width: 60px;
+  display: none;
+  transition: all .2s;
+}
+
+.site-navigation__menu--hiden:hover {
+  fill: white;
 }
 
 .right-food {
@@ -682,7 +696,7 @@ header {
 
 .chief__title::after {
   content: '';
-  background: url(../images/Divider-g@1X.png) no-repeat center;
+  background: url(../images/divider-g@1X.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
@@ -707,7 +721,7 @@ header {
   color: white;
   height: 570px;
   width: 560px;
-  background: radial-gradient(ellipse at center, rgba(200, 200, 200, 0.15) 18%, rgba(26, 23, 23, 0.15) 25%, rgba(21, 19, 19, 0.15) 38%, rgba(1, 0, 0, 0.95) 97%, rgba(0, 0, 0, 0.95) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 4%, rgba(0, 0, 0, 0.79) 85%, rgba(0, 0, 0, 0.81) 86%, rgba(0, 0, 0, 0.84) 92%);
   margin-right: 8%;
 }
 
@@ -884,7 +898,7 @@ header {
   display: block;
   width: 247px;
   height: 30px;
-  background: url("../images/divider-w@1X.png") center no-repeat;
+  background: url("../images/Divider.png") center no-repeat;
   background-size: contain;
 }
 
@@ -1190,6 +1204,21 @@ footer {
     -webkit-transform: translate(1px, -50%);
     transform: translate(1px, -50%);
   }
+
+  .navigation {
+    margin-bottom: 150px;
+  }
+
+  .navigation__item:nth-of-type(n) {
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+
+  .right-food__main-img {
+    width: 450px;
+    height: 450px;
+    margin-right: 10%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1225,16 +1254,19 @@ footer {
   .first-line {
     width: 280px;
   }
-}
 
-@media (max-width: 900px) {
-  .navigation {
-    margin-bottom: 30px;
+  .site-navigation__menu--hiden {
+    display: block;
   }
 
   .top-container {
-    flex-direction: row;
-    align-items: flex-start;
+    margin-bottom: 150px;
+    justify-content: space-around;
+    margin-left: 10%;
+  }
+
+  .navigation {
+    display: none;
   }
 
   .navigation__list {
@@ -1248,42 +1280,24 @@ footer {
     margin-bottom: 5px;
   }
 
-  .main-title {
-    font-size: 50px;
-    color: white;
-    width: 450px;
-    text-align: center;
-  }
-
-  .right-food__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-around;
-    height: 500px;
-  }
-
-  .right-food__main-img {
-    width: 200px;
-    height: auto;
-  }
-
-  .chief__paragraph {
-    width: 330px;
+  .ingredients__wrapper {
+    height: 550px;
   }
 
   .ingredients__section {
-    width: 500px;
-    margin: 0;
+    width: 400px;
+    height: 420px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .ingredients__paragraph {
+    margin-bottom: 40px;
+    width: 330px;
   }
 
   .ingredients__images:not(:last-of-type) {
     margin-right: 10px;
-  }
-
-  .ingredients__paragraph {
-    width: 330px;
   }
 
   .footer__wrapper {
@@ -1295,6 +1309,39 @@ footer {
 
   .footer__content {
     margin-bottom: 40px;
+  }
+
+  .main-title {
+    font-size: 50px;
+    color: white;
+    width: 450px;
+    text-align: center;
+  }
+
+  .right-food {
+    justify-content: flex-start;
+  }
+
+  .right-food__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .right-food__main-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .chief {
+    padding-top: 20px;
+    height: 490px;
+  }
+
+  .chief__paragraph {
+    width: 330px;
+    margin-bottom: 20px;
   }
 }
 
