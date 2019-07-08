@@ -1,18 +1,48 @@
-<section class="contacts">
-    <div class="images">
-        <img class="images__dish" src="../images/bottomdish.jpg" alt="" width="270" height="506">
-        <img class="images__cherry" src="../images/cherry.jpg" alt="" width="270" height="506">
-    </div>
-    <div class="booking">
-        <h3 class="booking-title">Just the right food</h3>
-        <p class="booking-text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food. <br>
-                Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
-        <form action="">
-            <input type="text">
-            <input type="mail">
-            <input type="date">
-            <input type="text">
-            <input type="button">
-        </form>
-    </div>
-</section>
+<div class="wrapper">
+    <section class="contacts">
+        <div class="images">
+            <img class="images__dish" src="../images/bottomdish.jpg" alt="" width="270" height="506">
+            <img class="images__cherry" src="../images/cherry.jpg" alt="" width="270" height="506">
+        </div>
+        <div class="booking">
+            <div class="booking-info">
+                <h3 class="booking-title">Just the right food</h3>
+                <p class="booking-text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps
+                    our
+                    customers coming back for more. Perfect materials and freshly baked food. <br>
+                    <br>
+                    Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check
+                    us
+                    out!
+                    Perfect materials and freshly baked food.</p>
+            </div>
+            <form action="#" class="form">
+                <div class="input-section">
+                    <div class="input-item">
+                        <label class="label" for="name">Name</label>
+                        <input type="text" id="name" placeholder="your name*" required>
+                    </div>
+                    <div class="input-item">
+                        <label class="label" for="email">Email</label>
+                        <input type="email" id="email" placeholder="your email*" required>
+                    </div>
+                    <div class="input-item">
+                        <label class="label" for="date">Date</label>
+                        <input type="date" id="date" placeholder="date*" required>
+                    </div>
+                    <div class="input-item">
+                        <label class="label" for="party">Party Number</label>
+                        <select placeholder="party number" id="party">
+                            <option value="" disabled selected>party number</option>
+                            <option value="1">Party 1</option>
+                            <option value="2">Party 2</option>
+                            <option value="3">Party 3</option>
+                            <option value="4">Party 4</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="button" value="Book Now!" class="booking-button">
+            </form>
+        </div>
+    </section>
+</div>
