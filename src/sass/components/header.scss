@@ -106,7 +106,7 @@ header {
     &__list {
         display: flex;
     }
-    &__header:first-of-type {
+    &__item:nth-of-type(1){
         margin-right: 30px;
     }
 }

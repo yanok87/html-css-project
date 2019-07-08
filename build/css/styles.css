@@ -643,7 +643,7 @@ header {
   display: flex;
 }
 
-.button__header:first-of-type {
+.button__item:nth-of-type(1) {
   margin-right: 30px;
 }
 
