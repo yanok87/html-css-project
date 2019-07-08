@@ -1,36 +1,38 @@
 .right-food {
-    
-    height: 710px;
     background: url(../images/pattern.png) no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
+    height: 730px;
      
     &__section {
-        
+        align-items: flex-start;
         display: flex;
-        flex-basis: 1050px;
-        justify-content: space-between;
-        
     }
     &__main-img {
-        width: 550px;
-        height: 550px;
+        max-width: 550px;
         border-radius: 50%;
-        box-shadow: 1px 28px 43px 3px rgba(0,0,0,0.23); 
+        align-self: center;
+        box-shadow: 1px 28px 43px 3px rgba(0,0,0,0.23);  
     }
 }
 .chief {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items:center;
+    align-content: center;
     text-align: center;
-    width: 430px;
-    height: 510px;
+    justify-content: center;
+    max-width: 430px;
+    
+
+    
     &__img {
-        height: 220px;
+        max-height: 220px;
         width: 220px;
+        align-self: flex-start;
+        margin-left: 35%;
     }
     &__title {
         color: $main-theme-color;
@@ -41,15 +43,15 @@
         background: url(../images/divider-g@1X.png) no-repeat center;
         display:block;
         margin: 0 auto;
-        width: 236px;
+        width: 206px;
         height: 66px;
         }   
     }
     &__paragraph {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         font-family: $text-font;
         font-size: 16px;
         color: #4c4c4c;
     }
+}
 
-} 
