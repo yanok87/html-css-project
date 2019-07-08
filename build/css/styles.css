@@ -605,7 +605,7 @@ header {
 
 .main-title::after {
   content: '';
-  background: url(../images/divider-w@1X.png) no-repeat center;
+  background: url(../images/Divider-w@1X.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
@@ -713,7 +713,7 @@ header {
 
 .chief__title::after {
   content: '';
-  background: url(../images/divider-g@1X.png) no-repeat center;
+  background: url(../images/Divider-g@1X.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
@@ -772,7 +772,7 @@ header {
 
 .ingredients__title::after {
   content: '';
-  background: url(../images/divider.png) no-repeat center;
+  background: url(../images/Divider.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
@@ -1039,7 +1039,7 @@ footer {
 
 .footer__title::after {
   content: '';
-  background: url(../images/divider.png) no-repeat center;
+  background: url(../images/Divider.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
