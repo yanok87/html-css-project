@@ -11,7 +11,8 @@
         color: white;
         height: 570px;
         width: 560px;
-        background:radial-gradient(ellipse at center, rgba(200,200,200,0.15) 18%, rgba(26,23,23,0.15) 25%, rgba(21,19,19,0.15) 38%, rgba(1,0,0,0.95) 97%, rgba(0,0,0,0.95) 100%);
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.40) 4%, rgba(0,0,0,0.79) 85%,
+         rgba(0,0,0,0.81) 86%, rgba(0,0,0,0.84) 92%);
         margin-right: 8%;
         }
     &__wrapper {
@@ -55,18 +56,3 @@
         }   
     }
 }
-
-@media (max-width:900px) {
-
-    .ingredients__section {
-        width: 500px;
-        margin: 0;
-}
-    .ingredients__images{
-        &:not(:last-of-type) {
-            margin-right: 10px;
-    }
-    }
-    .ingredients__paragraph {
-        width: 330px;
-}}
