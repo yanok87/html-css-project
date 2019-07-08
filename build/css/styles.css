@@ -605,7 +605,7 @@ header {
 
 .main-title::after {
   content: '';
-  background: url(../images/Divider-w@1X.png) no-repeat center;
+  background: url(../images/divider-w@1X.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
@@ -713,7 +713,7 @@ header {
 
 .chief__title::after {
   content: '';
-  background: url(../images/Divider-g@1X.png) no-repeat center;
+  background: url(../images/divider-g@1X.png) no-repeat center;
   display: block;
   margin: 0 auto;
   width: 236px;
@@ -930,7 +930,7 @@ header {
   display: block;
   width: 247px;
   height: 30px;
-  background: url("../images/divider-w@1X.png") center no-repeat;
+  background: url("../images/Divider.png") center no-repeat;
   background-size: contain;
 }
 
