@@ -193,10 +193,11 @@ input[name="date"] {
     
     .images {
         flex-basis: 400px;
+        height: 360px;
     
         img {
             width: 190px;
-            height: auto;
+            height: 360px;
         }
     }
 
@@ -205,11 +206,11 @@ input[name="date"] {
         width: 300px;
     }
     .booking {
-        height: 430px;
+        height: 360px;
     }
 
     .form {
-        height: 170px;
+        height: auto;
     }
     
     .booking-info {
@@ -229,7 +230,7 @@ input[name="date"] {
 
     .booking-text {
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.2;
     }
 
  
@@ -238,20 +239,27 @@ input[name="date"] {
     .input-item,
     .booking-button {
         width: 140px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 14px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 12px;
         margin-bottom: 0;
-
     }  
+
+    .input-item:not(:nth-last-child(-n +2)) {
+        margin-bottom: 0px;
+    }
+
+    .input-item:nth-last-child(-n +2) {
+        margin-bottom: 10px;
+    }
 
     label {
         line-height: 24px;
-        font-size: 14px; 
+        font-size: 12px; 
     }
     
     .input-section {
-        height: 100px;
+        height: 120px;
     }
 
     input::placeholder,
@@ -260,7 +268,7 @@ input[name="date"] {
     }
     
     .label {
-        line-height: 24px;
+        line-height: 22px;
     }
   
 }
@@ -271,20 +279,38 @@ input[name="date"] {
         flex-direction: column-reverse;
         width: 400px;
         align-items: center;
-        // margin: 0 auto;
     }
 
     .booking {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        height: 380px;
+    
     }
 
     .images {
         width: 400px;
         align-content: space-between;
+        flex-basis: 360px;
     }
    
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+    .contacts {
+        max-width: 300px;
+        padding: 40px 0;
+    }
 
+    .booking {
+    }
+
+    .images {
+        width: 300px;
+        flex-basis: 260px;
+
+        img {
+            width: 140px;
+            height: 260px;
+        }
+    }
 }
