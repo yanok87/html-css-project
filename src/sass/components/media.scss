@@ -92,11 +92,11 @@
     max-height: 520px;
     margin-right: 0px;
     &__img {
-        margin-left: 25%;
+        margin-left: 30%;
     }
     &__paragraph {
       max-width: 330px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -120,7 +120,7 @@
   }
   .main-title {
     max-width: 330px;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     text-align: center;
   }
@@ -130,13 +130,15 @@
   }
 
   .ingredients {
+    
     &__wrapper {
       height: 550px;
     }
     &__section {
+      display: flex;
       max-width: 355px;
       height: 420px;
-      margin: auto;
+      
       justify-content: center;
     }
     &__paragraph {
@@ -163,12 +165,67 @@
   }
 }
 @media (max-width:500px) {
-  .ingredients {
+  header {
+    height: 570px;
     &__section {
+    padding: 20px;
+    }
+  }
+  .top-container {
+    margin-bottom: 30px;
+  }
+  .right-food {
+    height: 625px;
+    align-items: flex-start;
+}
+  .chief {
+    padding: 20px 20px 10px;
+    &__title {
+      font-size: 24px;
+    }
+    &__img {
+      width: 170px;
+      margin-left: 30%;
+  }
+  }
+  .ingredients {
+    
+    &__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__section {
+      padding: 20px;
       max-width: 355px;
-      height: 420px;
+      height: 450px;
       margin: 0 20px;
       justify-content: center;
     }
   }
+  .right-food__main-img {
+    width: 140px;
+    height: 140px;
+  }
+ .footer{
+  &__wrapper {
+   margin: 0 20px;
+    }
+    &__title::after,
+    &__info--payment::after {
+      
+    height: 50px;
+  }
+  &__info {
+    font-size: 14px;
+  }
+  .sotial__list {
+    padding-top: 20px;
+    }
+  }
+  
 }
