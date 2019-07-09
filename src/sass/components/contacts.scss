@@ -1,313 +1,306 @@
 .wrapper {
-    @extend %wrapper;
-    background-size: cover;
+  @extend %wrapper;
+  background-size: cover;
 }
 
 .contacts {
-    display: flex;
-    justify-content: space-between;
-    width: 1100px;
-    margin: 0 auto;
-    padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .images {
-    display: flex;
-    flex-basis: 570px;
-    justify-content: space-between;
+  display: flex;
+  flex-basis: 570px;
+  justify-content: space-between;
 
-    img {
-        width: 270px;
-        height: auto;
-        display: block;
-    }
+  img {
+    width: 270px;
+    height: auto;
+    display: block;
+  }
 }
 
 .booking {
-    width: 430px;
-    height: 506px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+  width: 430px;
+  height: 506px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .booking-info {
-text-align: center;
-height: 300px;
+  text-align: center;
+  height: 300px;
 }
 
 .booking-title {
-    font-family: $title-font;
-    font-size: 36px;
-    color: $main-theme-color;
-    margin-bottom: 70px;
-    position: relative;
+  font-family: $title-font;
+  font-size: 36px;
+  color: $main-theme-color;
+  margin-bottom: 70px;
+  position: relative;
 
-
-    &::after {
-        content:'';
-        position: absolute;
-        bottom: -100%;
-        left: 50%;
-        transform: translate(-50%, 10%);
-        display: block;
-        width: 247px;
-        height: 30px;
-        background: url('../images/divider-g@1X.png') center no-repeat;
-        background-size: contain;
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    display: block;
+    width: 247px;
+    height: 30px;
+    background: url('../images/divider-g@1X.png') center no-repeat;
+    background-size: contain;
+  }
 }
 
 .booking-text {
-    text-align: center;
-    font-family: $text-font;
-    color: $main-text-color;
-    font-size: 16px;
-    line-height: 1.5;
+  text-align: center;
+  font-family: $text-font;
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 // FORM
-
 .form {
-    display: flex;
-    width: 430px;
-    height: 210px;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-self: flex-end;
+  display: flex;
+  width: 430px;
+  height: 210px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: flex-end;
 }
 
 .input-section {
-    display: flex;
-    flex-wrap: wrap;
-    height: 140px;
-    justify-content: space-between;
-
+  display: flex;
+  flex-wrap: wrap;
+  height: 140px;
+  justify-content: space-between;
 }
 
 .input-item {
-    width: 200px;
-    &:not(:nth-last-child(-n +2)) {
-        margin-bottom: 20px;
-    }
+  width: 200px;
+
+  &:not(:nth-last-child(-n +2)) {
+    margin-bottom: 20px;
+  }
 }
 
-label, 
+label,
 input,
 select {
-    margin: 0;
-    height: 36px;
-    width: 200px;
-    text-indent: 10px;
-    &:focus {
-        outline: none;
-    }
-}   
+  margin: 0;
+  height: 36px;
+  width: 200px;
+  text-indent: 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
 
 input,
 select {
-    background-color: rgba(255, 255, 255, 0.399);
+  background-color: rgba(255, 255, 255, 0.399);
+  border: $border-color solid 1px;
 
-    border: $border-color solid 1px;
-    &:focus {
-        border: $main-theme-color solid 1px;
-    }
+  &:focus {
+    border: $main-theme-color solid 1px;
+  }
 }
 
 input::placeholder,
 select {
-    font-family: $footer-font;
-    font-style: italic;
-    font-size: 16px;
-    color: #7c7c7c;
-    position: relative;
+  font-family: $footer-font;
+  font-style: italic;
+  font-size: 16px;
+  color: #7c7c7c;
+  position: relative;
 }
 
 select {
-    appearance: none;
-    background: url(../images/icon-arrow.svg) no-repeat 95% center  rgba(255, 255, 255, 0.399);
-    background-size: 12px; 
+  appearance: none;
+  background: url(../images/icon-arrow.svg) no-repeat 95% center rgba(255, 255, 255, 0.399);
+  background-size: 12px;
 }
 
 input[name="date"] {
-    background: url(../images/icon-calendar.svg) no-repeat 95% center  rgba(255, 255, 255, 0.399);
-    background-size: 16px; 
+  background: url(../images/icon-calendar.svg) no-repeat 95% center rgba(255, 255, 255, 0.399);
+  background-size: 16px;
 }
 
-
 .label {
-    font-family: $footer-font;
-    font-weight: bold;
-    color: $main-theme-color;
-    font-size: 14px;
-    line-height: 28px;
+  font-family: $footer-font;
+  font-weight: bold;
+  color: $main-theme-color;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 .booking-button {
-    width: 200px;
-    height: 36px;
-    line-height: 36px;
-    font-family: $footer-font;
-    font-size: 16px;
-    background-color: $main-theme-color;
-    color: #fff;
-    align-self: flex-end;
-    border: none;
-    cursor: pointer;
+  width: 200px;
+  height: 36px;
+  line-height: 36px;
+  font-family: $footer-font;
+  font-size: 16px;
+  background-color: $main-theme-color;
+  color: #fff;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1199px) {
-    .contacts {
-        max-width: 950px;
-        padding: 70px 0;
-    }
-    
-    .images {
-        flex-basis: 520px;
-    
-        img {
-            width: 240px;
-            height: auto;
-        }
-    }
+  .contacts {
+    max-width: 950px;
+    padding: 70px 0;
+  }
 
-    .booking,
-    .form {
-        width: 400px;
+  .images {
+    flex-basis: 520px;
+
+    img {
+      width: 240px;
+      height: auto;
     }
-    
-    label, 
-    input,
-    select,
-    .input-item,
-    .booking-button {
-        width: 180px;
-    }   
+  }
+
+  .booking,
+  .form {
+    width: 400px;
+  }
+
+  label,
+  input,
+  select,
+  .input-item,
+  .booking-button {
+    width: 180px;
+  }
 }
 
 @media (max-width: 991px) {
-    .contacts {
-        max-width: 720px;
-        padding: 50px 0;
-    }
-    
-    .images {
-        flex-basis: 400px;
-        height: 360px;
-    
-        img {
-            width: 190px;
-            height: 360px;
-        }
-    }
+  .contacts {
+    max-width: 720px;
+    padding: 50px 0;
+  }
 
-    .booking,
-    .form {
-        width: 300px;
-    }
-    .booking {
-        height: 360px;
-    }
+  .images {
+    flex-basis: 400px;
+    height: 360px;
 
-    .form {
-        height: auto;
+    img {
+      width: 190px;
+      height: 360px;
     }
-    
-    .booking-info {
+  }
+
+  .booking,
+  .form {
+    width: 300px;
+    height: auto;
+  }
+
+  .booking {
+    height: 360px;
+  }
+
+  .booking-info {
     height: 150px;
-    }
-    
-    .booking-title {
-        font-size: 28px;
-        margin-bottom: 30px;
-        &::after {
-            width: 200px;
-            height: 20px;
-            bottom: -75%;
-            transform: translateX(-50%);
-        }
-    }
+  }
 
-    .booking-text {
-        font-size: 14px;
-        line-height: 1.2;
-    }
+  .booking-title {
+    font-size: 28px;
+    margin-bottom: 30px;
 
- 
-    input,
-    select,
-    .input-item,
-    .booking-button {
-        width: 140px;
-        height: 26px;
-        line-height: 26px;
-        font-size: 12px;
-        margin-bottom: 0;
-    }  
+    &::after {
+      width: 200px;
+      height: 20px;
+      bottom: -75%;
+      transform: translateX(-50%);
+    }
+  }
 
-    .input-item:not(:nth-last-child(-n +2)) {
-        margin-bottom: 0px;
-    }
+  .booking-text {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 
-    .input-item:nth-last-child(-n +2) {
-        margin-bottom: 10px;
-    }
+  input,
+  select,
+  .input-item,
+  .booking-button {
+    width: 140px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
 
-    label {
-        line-height: 24px;
-        font-size: 12px; 
-    }
-    
-    .input-section {
-        height: 120px;
-    }
+  .input-item:not(:nth-last-child(-n +2)) {
+    margin-bottom: 0px;
+  }
 
-    input::placeholder,
-    select {
-        font-size: 14px;
-    }
-    
-    .label {
-        line-height: 22px;
-    }
-  
+  .input-item:nth-last-child(-n +2) {
+    margin-bottom: 10px;
+  }
+
+  label {
+    line-height: 24px;
+    font-size: 12px;
+  }
+
+  .input-section {
+    height: 120px;
+  }
+
+  input::placeholder,
+  select {
+    font-size: 14px;
+  }
+
+  .label {
+    line-height: 22px;
+  }
+
 }
 
 @media (max-width: 740px) {
+  .contacts {
+    flex-direction: column-reverse;
+    width: 400px;
+    align-items: center;
+  }
 
-    .contacts {
-        flex-direction: column-reverse;
-        width: 400px;
-        align-items: center;
-    }
+  .booking {
+    margin-bottom: 30px;
+    height: 380px;
+  }
 
-    .booking {
-        margin-bottom: 30px;
-        height: 380px;
-    
-    }
-
-    .images {
-        width: 400px;
-        align-content: space-between;
-        flex-basis: 360px;
-    }
-   
+  .images {
+    width: 400px;
+    align-content: space-between;
+    flex-basis: 360px;
+  }
 }
 
 @media (max-width: 500px) {
-    .contacts {
-        max-width: 300px;
-        padding: 40px 0;
-    }
+  .contacts {
+    max-width: 300px;
+    padding: 40px 0;
+  }
 
-    .images {
-        width: 300px;
-        flex-basis: 260px;
+  .images {
+    width: 300px;
+    flex-basis: 260px;
 
-        img {
-            width: 140px;
-            height: 260px;
-        }
+    img {
+      width: 140px;
+      height: 260px;
     }
+  }
 }
