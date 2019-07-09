@@ -83,20 +83,21 @@
 
 @media (max-width: 550px) {
     .review {
-        height: 500px;  
+        height: 480px;  
     }
     
     .review-box {
         max-width: 500px;
         padding: 20px;
+        margin: 20px;
     }
     
     .review-title {
         font-size: 24px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     
         &::after {
-            bottom: -200%;
+            bottom: -170%;
             left: 50%;
             transform: translateX(-50%);
             width: 150px;
@@ -106,6 +107,7 @@
     
     .review-text {
         margin-bottom: 20px;
+        line-height: 1.5;
     }
 }
   
