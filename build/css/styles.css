@@ -1789,6 +1789,19 @@ footer {
     height: 260px;
   }
 
+  .booking-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .booking-title::after {
+    width: 200px;
+    height: 30px;
+    bottom: -100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
   header {
     height: 700px;
   }

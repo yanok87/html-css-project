@@ -303,4 +303,15 @@ input[name="date"] {
       height: 260px;
     }
   }
+  .booking-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+
+    &::after {
+      width: 200px;
+      height: 30px;
+      bottom: -100%;
+      transform: translateX(-50%);
+    }
+  }
 }
