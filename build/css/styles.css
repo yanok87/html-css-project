@@ -542,7 +542,6 @@ header {
 
 .navigation {
   padding-top: 46px;
-  margin-bottom: 150px;
 }
 
 .navigation__list {
@@ -588,6 +587,7 @@ header {
   display: -webkit-box;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 150px;
 }
 
 .top-wrapper {
@@ -598,6 +598,7 @@ header {
   flex-flow: column wrap;
   -webkit-box-align: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -859,8 +860,7 @@ header {
 }
 
 .meal {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0 10px;
   width: 434px;
 }
 
@@ -1304,10 +1304,6 @@ footer {
     width: 180px;
   }
 
-  .navigation {
-    margin-bottom: 150px;
-  }
-
   .navigation__item:nth-of-type(n) {
     margin-right: 15px;
     margin-bottom: 5px;
@@ -1371,14 +1367,11 @@ footer {
   .booking,
   .form {
     width: 300px;
+    height: auto;
   }
 
   .booking {
     height: 360px;
-  }
-
-  .form {
-    height: auto;
   }
 
   .booking-info {
@@ -1762,7 +1755,6 @@ footer {
   }
 
   .review-title {
-    font-size: 24px;
     margin-bottom: 40px;
   }
 
@@ -1798,7 +1790,7 @@ footer {
   }
 
   header {
-    height: 570px;
+    height: 700px;
   }
 
   header__section {
@@ -1806,7 +1798,7 @@ footer {
   }
 
   .top-container {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
 
   .right-food {
@@ -1875,5 +1867,19 @@ footer {
 @media (max-width: 479px) {
   .menu {
     max-width: 450px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    height: 570px;
+  }
+
+  header__section {
+    padding: 20px;
+  }
+
+  .top-container {
+    margin-bottom: 30px;
   }
 }
