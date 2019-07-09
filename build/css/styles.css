@@ -1792,9 +1792,7 @@ footer {
     width: 140px;
     height: 260px;
   }
-}
 
-@media (max-width: 500px) {
   .ingredients__section {
     max-width: 355px;
     height: 420px;
