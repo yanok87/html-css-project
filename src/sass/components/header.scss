@@ -19,7 +19,7 @@ header {
 }
 .navigation {
     padding-top: 46px;
-    margin-bottom: 150px;
+    
     
     &__list {
         display: flex;
@@ -53,13 +53,13 @@ header {
 .top-container {
     display: flex;
     justify-content: space-around;
-    
+    margin-bottom: 150px;
 }
 .top-wrapper {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    
+    margin: 0 auto;
 }
 .main-title {
     position: relative;
