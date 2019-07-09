@@ -403,7 +403,9 @@ h1 {
 }
 
 .first-line {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   list-style: none;
 }
@@ -529,6 +531,7 @@ header {
 .logo__img {
   width: 155px;
   height: 92px;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -542,6 +545,7 @@ header {
 }
 
 .navigation__list {
+  display: -webkit-box;
   display: flex;
   font-family: "Gentium Book Basic", serif;
   font-weight: bold;
@@ -553,6 +557,7 @@ header {
   -moz-tab-size: 21px;
   -o-tab-size: 21px;
   tab-size: 21px;
+  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -561,6 +566,7 @@ header {
 }
 
 .navigation__item {
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -578,14 +584,19 @@ header {
 }
 
 .top-container {
+  display: -webkit-box;
   display: flex;
   justify-content: space-around;
   margin-bottom: 150px;
 }
 
 .top-wrapper {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-flow: column wrap;
+  -webkit-box-align: center;
   align-items: center;
   margin: 0 auto;
 }
@@ -611,6 +622,7 @@ header {
   width: 20px;
   height: 20px;
   fill: #cc9900;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -633,6 +645,7 @@ header {
 }
 
 .button__list {
+  display: -webkit-box;
   display: flex;
 }
 
@@ -647,6 +660,7 @@ header {
   fill: #cc9900;
   width: 38px;
   display: none;
+  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -657,14 +671,18 @@ header {
 .right-food {
   background: url(../images/pattern.png) no-repeat;
   background-size: cover;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   justify-content: space-around;
   height: 730px;
 }
 
 .right-food__section {
+  -webkit-box-align: start;
   align-items: flex-start;
+  display: -webkit-box;
   display: flex;
 }
 
@@ -677,11 +695,16 @@ header {
 
 .chief {
   padding-top: 50px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-flow: column wrap;
+  -webkit-box-align: center;
   align-items: center;
   align-content: center;
   text-align: center;
+  -webkit-box-pack: center;
   justify-content: center;
   max-width: 430px;
   margin-right: 70px;
@@ -718,10 +741,15 @@ header {
 }
 
 .ingredients__section {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-flow: column wrap;
   text-align: center;
   align-self: center;
@@ -733,16 +761,20 @@ header {
 }
 
 .ingredients__wrapper {
+  display: -webkit-box;
   display: flex;
   background: url(../images/bg-2.jpg) no-repeat;
   background-size: cover;
   height: 758px;
+  -webkit-box-pack: end;
   justify-content: flex-end;
   align-content: center;
 }
 
 .ingredients__wrapper--images {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 
@@ -781,7 +813,10 @@ header {
 .menu {
   height: 990px;
   padding: 95px 110px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -874,7 +909,9 @@ header {
   background: url("../images/bg-3.jpg") center no-repeat;
   background-size: cover;
   height: 760px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -926,7 +963,9 @@ header {
 }
 
 .contacts {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   width: 1100px;
   margin: 0 auto;
@@ -934,8 +973,10 @@ header {
 }
 
 .images {
+  display: -webkit-box;
   display: flex;
   flex-basis: 570px;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -948,8 +989,10 @@ header {
 .booking {
   width: 430px;
   height: initial;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-align: stretch;
   align-items: stretch;
 }
 
@@ -989,18 +1032,22 @@ header {
 }
 
 .form {
+  display: -webkit-box;
   display: flex;
   width: 430px;
   height: 210px;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
   justify-content: center;
   align-self: flex-end;
 }
 
 .input-section {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   height: 140px;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -1039,6 +1086,15 @@ select:focus {
 }
 
 input::-webkit-input-placeholder,
+select {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #7c7c7c;
+  position: relative;
+}
+
+input::-moz-placeholder,
 select {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
@@ -1112,16 +1168,22 @@ footer {
   background: black;
   min-height: 320px;
   color: white;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: space-evenly;
   justify-content: space-evenly;
   text-align: center;
   padding-top: 50px;
 }
 
 .footer__wrapper {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-flow: row wrap;
   flex-basis: 1090px;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -1163,7 +1225,9 @@ footer {
 }
 
 .sotial__list {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   fill: white;
   padding-top: 25px;
@@ -1173,6 +1237,7 @@ footer {
   width: 18px;
   height: 18px;
   fill: white;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -1364,6 +1429,11 @@ footer {
     font-size: 14px;
   }
 
+  input::-moz-placeholder,
+  select {
+    font-size: 14px;
+  }
+
   input:-ms-input-placeholder,
   select {
     font-size: 14px;
@@ -1397,7 +1467,10 @@ footer {
   }
 
   .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
     font-size: 30px;
   }
@@ -1415,6 +1488,7 @@ footer {
     max-width: 400px;
     height: 420px;
     margin: auto;
+    -webkit-box-pack: center;
     justify-content: center;
   }
 
@@ -1428,8 +1502,12 @@ footer {
   }
 
   .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     margin-bottom: 20px;
   }
@@ -1446,12 +1524,17 @@ footer {
   }
 
   .right-food {
+    -webkit-box-pack: center;
     justify-content: center;
   }
 
   .right-food__section {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
   }
 
@@ -1544,8 +1627,11 @@ footer {
   }
 
   .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
     flex-direction: column-reverse;
     width: 400px;
+    -webkit-box-align: center;
     align-items: center;
   }
 
@@ -1565,6 +1651,7 @@ footer {
   .menu {
     flex-wrap: nowrap;
     height: auto;
+    -webkit-box-align: center;
     align-items: center;
   }
 
@@ -1597,7 +1684,9 @@ footer {
   }
 
   .header__section {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
   }
 
@@ -1609,6 +1698,8 @@ footer {
   }
 
   .button__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
@@ -1617,9 +1708,11 @@ footer {
   }
 
   .ingredients__section {
+    display: -webkit-box;
     display: flex;
     max-width: 355px;
     height: 420px;
+    -webkit-box-pack: center;
     justify-content: center;
   }
 
@@ -1650,6 +1743,7 @@ footer {
 @media (max-width: 550px) {
   .review {
     height: 480px;
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
   }
@@ -1722,6 +1816,7 @@ footer {
 
   .right-food {
     height: 625px;
+    -webkit-box-align: start;
     align-items: flex-start;
   }
 
@@ -1739,7 +1834,9 @@ footer {
   }
 
   .ingredients__wrapper {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
     height: 500px;
   }
@@ -1753,6 +1850,7 @@ footer {
     max-width: 355px;
     height: 450px;
     margin: 0 20px;
+    -webkit-box-pack: center;
     justify-content: center;
   }
 
