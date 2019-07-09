@@ -84,6 +84,8 @@
 @media (max-width: 550px) {
     .review {
         height: 480px;  
+        display: flex;
+        justify-content: space-around;
     }
     
     .review-box {
