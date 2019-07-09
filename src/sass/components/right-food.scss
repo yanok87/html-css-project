@@ -18,6 +18,7 @@
     }
 }
 .chief {
+    padding-top: 50px;
     display: flex;
     flex-flow: column wrap;
     align-items:center;
@@ -25,8 +26,7 @@
     text-align: center;
     justify-content: center;
     max-width: 430px;
-    
-
+    margin-right: 70px;
     
     &__img {
         max-height: 220px;
@@ -35,6 +35,8 @@
         margin-left: 35%;
     }
     &__title {
+        font-family: $title-font;
+        font-weight: normal;
         color: $main-theme-color;
         font-size: 36px;
         
@@ -48,7 +50,7 @@
         }   
     }
     &__paragraph {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         font-family: $text-font;
         font-size: 16px;
         color: #4c4c4c;

@@ -1,10 +1,5 @@
 
-//  @media  (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//     header {
-//       background:
-//       url('../images/Bg@2X.jpg') no-repeat;
-//       background-size: cover;
-//     }}  
+
 header {
     background: url(../images/Bg.jpg) no-repeat;
     background-size: cover;
@@ -18,7 +13,7 @@ header {
         height: 92px;
         transition: all .3s;
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.05);
         }
     }
 }
@@ -112,10 +107,10 @@ header {
 }
 .site-navigation__menu--hiden {
     position: absolute;
-    top: 0;
-    left: 80%;
+    top: -9px;
+    left: 5%;
     fill: $main-theme-color;
-    width: 60px;
+    width: 38px;
     display: none;
     
 
