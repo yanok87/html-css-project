@@ -11,9 +11,9 @@
         color: white;
         height: 570px;
         width: 560px;
-        background: radial-gradient(ellipse at center, rgba(0,0,0,0.40) 4%, rgba(0,0,0,0.79) 85%,
-         rgba(0,0,0,0.81) 86%, rgba(0,0,0,0.84) 92%);
-        margin-right: 8%;
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.30) 4%, rgba(0,0,0,0.69) 85%,
+         rgba(0,0,0,0.71) 86%, rgba(0,0,0,0.72) 92%);
+        margin-right: 12%;
         }
     &__wrapper {
         display: flex;
@@ -30,7 +30,8 @@
     }
     &__title{
         font-size: 36px;
-        font-family: $text-font;
+        font-family: $title-font;
+        font-weight: normal;
         &::after {
             content: '';
             background: url(../images/Divider.png) no-repeat center;
