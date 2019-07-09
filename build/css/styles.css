@@ -946,7 +946,7 @@ header {
 
 .booking {
   width: 430px;
-  height: 506px;
+  height: initial;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -968,10 +968,10 @@ header {
 .booking-title::after {
   content: '';
   position: absolute;
-  bottom: -100%;
+  bottom: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, 10%);
-  transform: translate(-50%, 10%);
+  -webkit-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
   display: block;
   width: 247px;
   height: 30px;
@@ -1313,7 +1313,7 @@ footer {
   }
 
   .booking-info {
-    height: 150px;
+    height: initial;
   }
 
   .booking-title {
