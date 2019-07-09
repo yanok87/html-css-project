@@ -43,7 +43,7 @@
     }
     
     &__paragraph {
-        width: 430px;
+        max-width: 430px;
         font-size: 16px;
         font-family: $text-font;
         margin-bottom: 70px;
