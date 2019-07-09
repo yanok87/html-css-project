@@ -932,7 +932,7 @@ header {
   justify-content: space-between;
 }
 
-.imagesimg {
+.images img {
   width: 270px;
   height: auto;
   display: block;
@@ -1205,6 +1205,33 @@ footer {
     transform: translate(1px, -50%);
   }
 
+  .contacts {
+    max-width: 950px;
+    padding: 70px 0;
+  }
+
+  .images {
+    flex-basis: 520px;
+  }
+
+  .images img {
+    width: 240px;
+    height: auto;
+  }
+
+  .booking,
+  .form {
+    width: 400px;
+  }
+
+  label,
+  input,
+  select,
+  .input-item,
+  .booking-button {
+    width: 180px;
+  }
+
   .navigation {
     margin-bottom: 150px;
   }
@@ -1253,6 +1280,99 @@ footer {
 
   .first-line {
     width: 280px;
+  }
+
+  .contacts {
+    max-width: 720px;
+    padding: 50px 0;
+  }
+
+  .images {
+    flex-basis: 400px;
+  }
+
+  .images img {
+    width: 190px;
+    height: auto;
+  }
+
+  .booking,
+  .form {
+    width: 300px;
+  }
+
+  .booking {
+    height: 430px;
+  }
+
+  .form {
+    height: 170px;
+  }
+
+  .booking-info {
+    height: 150px;
+  }
+
+  .booking-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .booking-title::after {
+    width: 200px;
+    height: 20px;
+    bottom: -75%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .booking-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  input,
+  select,
+  .input-item,
+  .booking-button {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  label {
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  .input-section {
+    height: 100px;
+  }
+
+  input::-webkit-input-placeholder,
+  select {
+    font-size: 14px;
+  }
+
+  input:-ms-input-placeholder,
+  select {
+    font-size: 14px;
+  }
+
+  input::-ms-input-placeholder,
+  select {
+    font-size: 14px;
+  }
+
+  input::placeholder,
+  select {
+    font-size: 14px;
+  }
+
+  .label {
+    line-height: 24px;
   }
 
   .site-navigation__menu--hiden {
@@ -1410,6 +1530,21 @@ footer {
 
   .review-text {
     margin-bottom: 30px;
+  }
+
+  .contacts {
+    flex-direction: column-reverse;
+    width: 400px;
+    align-items: center;
+  }
+
+  .booking {
+    margin-bottom: 40px;
+  }
+
+  .images {
+    width: 400px;
+    align-content: space-between;
   }
 }
 
